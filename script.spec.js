@@ -19,9 +19,9 @@ describe('check if the validation functions are working', () => {
   });
   
   it("should not throw an error if the numbers are just 0's and 1's", () => {
-    expect(() => otherNumberBesidesZeroOrOne("00000000")).toThrowError("The app can only receive 0's and 1's");
-    expect(() => otherNumberBesidesZeroOrOne("11111111")).toThrowError("The app can only receive 0's and 1's");
-    expect(() => otherNumberBesidesZeroOrOne("01010010")).toThrowError("The app can only receive 0's and 1's");
+    expect(() => otherNumberBesidesZeroOrOne("00000000")).not.toThrowError();
+    expect(() => otherNumberBesidesZeroOrOne("11111111")).not.toThrowError();
+    expect(() => otherNumberBesidesZeroOrOne("01010010")).not.toThrowError();
   });
 });
 
