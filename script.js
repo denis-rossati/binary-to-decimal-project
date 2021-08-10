@@ -21,9 +21,7 @@ const binaryToDecimal = (binaryNumber) => {
   const revertedArray = binaryNumber.split('').reverse();
   const numbersAfterExponation = revertedArray.map((_, index) => Math.pow(2, index));
   const multiplyiedNumbers = numbersAfterExponation.map((number, index) => number * revertedArray[index]);
-  let result = 0;
-  multiplyiedNumbers.forEach((number) => result += number); 
-  return result;
+  return multiplyiedNumbers.reduce((acc, number) => acc += number, 0); 
 }
 
 module.exports = {
