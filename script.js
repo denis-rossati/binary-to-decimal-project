@@ -19,9 +19,11 @@ const binaryToDecimal = (binaryNumber) => {
   maxDigits(binaryString.length);
   otherNumberBesidesZeroOrOne(binaryString);
   const revertedArray = binaryNumber.split('').reverse();
-  const numbersAfterExponation = revertedArray.map((_, index) => Math.pow(2, index));
-  const multiplyiedNumbers = numbersAfterExponation.map((number, index) => number * revertedArray[index]);
-  return multiplyiedNumbers.reduce((acc, number) => acc += number, 0); 
+  const integersArray = revertedArray.map((number, index) => {
+    const exponationNumber = Math.pow(2, index);
+    return number * exponationNumber;
+  });
+  return integersArray.reduce((acc, number) => acc += number, 0); 
 }
 
 module.exports = {
