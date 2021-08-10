@@ -14,7 +14,13 @@ const otherNumberBesidesZeroOrOne = (binary) => {
   }
 }
 
+const binaryToDecimal = () => {
+  maxDigits('100101');
+  otherNumberBesidesZeroOrOne('1010010')
+}
+
 module.exports = {
   maxDigits,
   otherNumberBesidesZeroOrOne,
+  binaryToDecimal,
 }
