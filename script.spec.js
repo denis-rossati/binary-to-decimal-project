@@ -36,9 +36,5 @@ describe('Check if the main function returns the correct values', () => {
     expect(binaryToDecimal('11010')).toEqual(26);
     expect(binaryToDecimal('0')).toEqual(0);
   });
-  it('check if call the main function with invalid parameters throw a error', () => {
-    expect(binaryToDecimal('00002000')).toThrow();
-    expect(binaryToDecimal('00000000000000000')).toThrow();
-  });
 });
 
