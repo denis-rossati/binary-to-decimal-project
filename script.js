@@ -20,9 +20,9 @@ const binaryToDecimal = (binaryNumber) => {
   otherNumberBesidesZeroOrOne(binaryString);
   const revertedArray = binaryNumber.split('').reverse();
   const numbersAfterExponation = revertedArray.map((_, index) => Math.pow(2, index));
-  const multiplyingNumbers = numbersAfterExponation.map((number, index) => number * revertedArray[index]);
+  const multiplyiedNumbers = numbersAfterExponation.map((number, index) => number * revertedArray[index]);
   let result = 0;
-  multiplyingNumbers.forEach((number) => result += number); 
+  multiplyiedNumbers.forEach((number) => result += number); 
   return result;
 }
 
