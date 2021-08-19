@@ -10,6 +10,6 @@ You don't need `npm install` unless you want to change the tests and running the
 
 This project was so simple that I do not feel like I should write a design for it, but for the "custom border css" project I will try it.
 
-## Which problema does this project solve
+## Which problem does this project solve
 
 As the project name can show, with this app you can know every single binary number in the decimal version. But the main problem that this project (and the sucessors of it) solve (and will solve) is my deficit in writing tests. Yes, I know that the tests are not complex and etc. But I'm starting simple. Watch me turning into the best QA in the universe as I go through my career >:D .
